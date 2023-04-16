@@ -1,0 +1,81 @@
+base_url = "https://blog.tfei.moe"
+title = "有希書簡"
+description = ""
+default_language = "en"
+compile_sass = true
+build_search_index = false
+generate_feed = true
+theme = "willow"
+
+# 按 tag 分类
+ taxonomies = [{ name = "tags", feed = true }]
+
+[markdown]
+highlight_code = true
+render_emoji = true
+
+
+[languages.en.translations]
+language_name = "English"
+home = "Home"
+articles = "Articles"
+tags = "Tags"
+photography = "Photography"
+# about = "About"
+memos = "Memos"
+date_format = "%Y-%m-%d"
+next_page = "Next Page"
+last_page = "Last Page"
+
+[languages.zh-CN.translations]
+language_name = " 中文 "
+home = " 首页 "
+articles = " 文章 "
+tags = " 标签 "
+photography = " 摄影 "
+# about = " 关于 "
+memos = " 碎碎念 "
+date_format = "%Y-%m-%d"
+next_page = " 下一页 "
+last_page = " 上一页 "
+
+[extra]
+
+
+[extra.willow]
+# The number of articles to show on the home page
+# show_article_num = 2
+
+# The order of the navigation bar, home is the first by default
+nav = ["articles"]
+# nav = ["articles", "memos", "photography", "tags", "about"]
+
+
+# Social accounts
+# currently supported: twitter, douban, github
+# [extra.willow.social]
+# twitter = "chaojie_cn"
+# douban = "218724191"
+# github = "ischaojie"
+
+[extra.willow.photography]
+# Put the photos you want to show on the photography page here
+photos = [
+    "https://file.chaojie.fun/photography/ 过春天.jpg",
+    "https://file.chaojie.fun/photography/lan.jpg",
+    "https://file.chaojie.fun/photography/ 我和 π.jpg",
+
+]
+
+
+# Comment with giscus, see https://giscus.app/ for more details
+[extra.willow.comment.giscus]
+repo = "ischaojie/blog"
+repo_id = "MDEwOlJlcG9zaXRvcnkyODk4MDA1NTY="
+category = "Announcements"
+category_id = "DIC_kwDOEUYBbM4CPWbs"
+mapping = "title"
+
+[extra.willow.memos]
+show_num = 10
+api = "https://momo.chaojie.fun/api/memo/all"

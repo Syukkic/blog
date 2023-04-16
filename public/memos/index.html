@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>
+            
+
+                有希書簡
+             | 碎碎念
+
+        </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content=" 有希書簡  | 碎碎念">
+        <meta property="og:description" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://blog.tfei.moe/memos/">
+
+        
+            <link rel="alternate" type="application/atom+xml" title="RSS" href="https://blog.tfei.moe/atom.xml">
+        
+        <link rel="icon" href="https://blog.tfei.moe/images/favicon.ico" sizes="any">
+        <link rel="stylesheet" href="https://blog.tfei.moe/libs/tabler.min.css">
+        <link rel="stylesheet" href="https://blog.tfei.moe/assets/willow.css">
+    </head>
+
+    <body>
+        <a rel="me" href="https://sn.angry.im/@yuki"></a>
+        <div class="theme-light" id="theme">
+            <div class="container-xl subpixel-antialiased">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-xl-9">
+                        
+    <div class="col" style="margin: 24px 0;">
+        <div class="row align-items-end">
+            <div class="col-auto" style="margin: auto 0;">
+                <a href="https://blog.tfei.moe/">
+                    <img src="https://blog.tfei.moe/images/logo.png" width="50" height="50" class=""></a>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="mb-0">有希書簡</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <nav>
+                            
+<ul class="list-inline list-inline-dots mb-0">
+    <li class="list-inline-item">
+        <a class="link-secondary" href="https://blog.tfei.moe/">
+            Home
+        </a>
+    </li>
+    
+    
+    
+    <li class="list-inline-item">
+        <a class="link-secondary" href="https://blog.tfei.moe/articles/">
+            Articles
+        </a>
+    </li>
+    
+    
+    
+    
+    
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+                <div class="col align-self-end">
+                    <div class="d-flex justify-content-end">
+                        <a href="https://blog.tfei.moe/atom.xml" target="_blank">
+                            <img src="https://blog.tfei.moe/images/social/rss.svg" alt="RSS" width="18" height="18"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+                        
+
+<div class="memos-scroll">
+</div>
+<p class="text-center" style="margin: 12px 0;">看完了，没有啦 😝</p>
+
+
+                        
+    <footer class="footer footer-transparent d-print-none">
+        <div class="container-xl">
+            <div class="row text-center align-items-center flex-row-reverse">
+                <div class="col-lg-auto ms-lg-auto">
+                    
+<ul class="list-inline list-inline-dots mb-0">
+    <li class="list-inline-item">
+        <a class="link-secondary" href="https://blog.tfei.moe/">
+            Home
+        </a>
+    </li>
+    
+    
+    
+    <li class="list-inline-item">
+        <a class="link-secondary" href="https://blog.tfei.moe/articles/">
+            Articles
+        </a>
+    </li>
+    
+    
+    
+    
+    
+</ul>
+
+                </div>
+                <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+                    <ul class="list-inline list-inline-dots mb-0">
+                        <li class="list-inline-item">
+                            Copyright ©
+                            2023
+                            <a href="." class="link-secondary">Yuki.N</a>.
+                                                        All rights reserved.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://blog.tfei.moe/libs/tabler.min.js"></script>
+        <script src="https://blog.tfei.moe/libs/fslightbox.js"></script>
+        <script src="https://blog.tfei.moe/libs/infinite-scroll.min.js"></script>
+        <script src="https://blog.tfei.moe/libs/luxon.min.js"></script>
+        <script src="https://blog.tfei.moe/js/willow.js"></script>
+        
+
+
+
+<script>
+    let container = document.querySelector('.memos-scroll');
+    let infScroll = new InfiniteScroll(container, {
+        path: function () {
+            return `https://momo.chaojie.fun/api/memo/all?&limit=10&offset=${this.pageIndex * 10}`;
+        },
+        // load response as JSON
+        responseBody: 'json',
+        status: '.scroll-status',
+        history: false,
+    });
+    let proxyElem = document.createElement('div');
+    infScroll.on('load', function (body) {
+        // compile body data into HTML
+        var itemsHTML = body['data'].map(getItemHTML).join('');
+        // convert HTML string into elements
+        proxyElem.innerHTML = itemsHTML;
+        // append item elements
+        container.append(...proxyElem.children);
+    });
+
+    // load initial page
+    infScroll.loadNextPage();
+
+    function getItemHTML({ content, creatorName, updatedTs }) {
+        return `
+<div class="scroll-element row row-cards justify-content-center" style="margin: 1px 0;">
+        <div class="col-lg-12">
+            <div class="card card-link">
+                <div class=""></div>
+                <div class="card-body">
+                    <p class="text-muted">
+                        @${creatorName} | ${ts2date(updatedTs)}
+                    </p>
+                    <p>${content}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+`;
+    }
+</script>
+
+
+
+
+    </body>
+
+</html>
