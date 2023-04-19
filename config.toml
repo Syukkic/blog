@@ -23,6 +23,7 @@ tags = "Tags"
 photography = "Photography"
 # about = "About"
 memos = "Memos"
+friends = "Friends"
 date_format = "%Y-%m-%d"
 next_page = "Next Page"
 last_page = "Last Page"
@@ -35,6 +36,7 @@ tags = " 标签 "
 photography = " 摄影 "
 # about = " 关于 "
 memos = " 碎碎念 "
+friends = " 朋友們 "
 date_format = "%Y-%m-%d"
 next_page = " 下一页 "
 last_page = " 上一页 "
@@ -47,7 +49,7 @@ last_page = " 上一页 "
 # show_article_num = 2
 
 # The order of the navigation bar, home is the first by default
-nav = ["articles"]
+nav = ["articles", "friends"]
 # nav = ["articles", "memos", "photography", "tags", "about"]
 
 
@@ -69,12 +71,12 @@ photos = [
 
 
 # Comment with giscus, see https://giscus.app/ for more details
-[extra.willow.comment.giscus]
-repo = "ischaojie/blog"
-repo_id = "MDEwOlJlcG9zaXRvcnkyODk4MDA1NTY="
-category = "Announcements"
-category_id = "DIC_kwDOEUYBbM4CPWbs"
-mapping = "title"
+# [extra.willow.comment.giscus]
+# repo = "ischaojie/blog"
+# repo_id = "MDEwOlJlcG9zaXRvcnkyODk4MDA1NTY="
+# category = "Announcements"
+# category_id = "DIC_kwDOEUYBbM4CPWbs"
+# mapping = "title"
 
 [extra.willow.memos]
 show_num = 10
