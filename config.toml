@@ -22,7 +22,7 @@ articles = "Articles"
 tags = "Tags"
 photography = "Photography"
 # about = "About"
-memos = "Memos"
+assertions = "Assertions"
 friends = "Friends"
 date_format = "%Y-%m-%d"
 next_page = "Next Page"
@@ -35,7 +35,7 @@ articles = " 文章 "
 tags = " 标签 "
 photography = " 摄影 "
 # about = " 关于 "
-memos = " 碎碎念 "
+assertions = " 断言 "
 friends = " 朋友們 "
 date_format = "%Y-%m-%d"
 next_page = " 下一页 "
@@ -49,7 +49,7 @@ last_page = " 上一页 "
 # show_article_num = 2
 
 # The order of the navigation bar, home is the first by default
-nav = ["articles", "friends"]
+nav = ["articles", "assertions", "friends"]
 # nav = ["articles", "memos", "photography", "tags", "about"]
 
 
@@ -62,12 +62,7 @@ nav = ["articles", "friends"]
 
 [extra.willow.photography]
 # Put the photos you want to show on the photography page here
-photos = [
-    "https://file.chaojie.fun/photography/ 过春天.jpg",
-    "https://file.chaojie.fun/photography/lan.jpg",
-    "https://file.chaojie.fun/photography/ 我和 π.jpg",
-
-]
+photos = []
 
 
 # Comment with giscus, see https://giscus.app/ for more details
@@ -78,6 +73,6 @@ photos = [
 # category_id = "DIC_kwDOEUYBbM4CPWbs"
 # mapping = "title"
 
-[extra.willow.memos]
+[extra.willow.assertions]
 show_num = 10
-api = "https://momo.chaojie.fun/api/memo/all"
+# api = "https://momo.chaojie.fun/api/memo/all"

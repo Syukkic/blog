@@ -14,7 +14,6 @@ Please feel free to contact me with:
 
 <a href="https://www.fsf.org/fb"><img width="20%" src="https://static.fsf.org/nosvn/not-fd.svg" alt="Not f'd — you won't find me on Facebook" /></a>
 
-資本主義將人異化成為野獸，並囚禁在社會的牢籠裡。—— Yuki.N
 
 
 
