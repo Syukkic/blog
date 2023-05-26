@@ -1,78 +1,55 @@
+# The URL the site will be built for
 base_url = "https://blog.tfei.moe"
 title = "有希書簡"
-description = ""
-default_language = "en"
-compile_sass = true
-build_search_index = false
+default_language = "zh-tw"
 generate_feed = true
-theme = "willow"
+theme = "Seje2"
 
-# 按 tag 分类
- taxonomies = [{ name = "tags", feed = true }]
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
 
 [markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
-render_emoji = true
-
-
-[languages.en.translations]
-language_name = "English"
-home = "Home"
-articles = "Articles"
-tags = "Tags"
-photography = "Photography"
-# about = "About"
-assertions = "Assertions"
-friends = "Friends"
-date_format = "%Y-%m-%d"
-next_page = "Next Page"
-last_page = "Last Page"
-
-[languages.zh-CN.translations]
-language_name = " 中文 "
-home = " 首页 "
-articles = " 文章 "
-tags = " 标签 "
-photography = " 摄影 "
-# about = " 关于 "
-assertions = " 断言 "
-friends = " 朋友們 "
-date_format = "%Y-%m-%d"
-next_page = " 下一页 "
-last_page = " 上一页 "
 
 [extra]
+# Put all your custom variables here
+# show Chinese date format instead of normal date format
+seje_chinese_date = true
+# show summary instead of the whole article on the index page
+seje_show_summary_only = false
+# Google Font API mirror URLs (for China mainland users, try fonts.loli.net)
+seje_font_mirror = "fonts.googleapis.com"
+# whether use traditional Chinese style vertical layout
+seje_vertical_layout = true
+# additional custom fonts to include (must be in CSS font-family format)
+seje_custom_fonts = ""
+# whether enable darkmode. Possible values: auto, always, never
+seje_darkmode = "auto"
+# Your site blog links
+seje_menu_links = [
+    {url = "$BASE_URL/", name = "home"},
+    {url = "$BASE_URL/archives", name = "archives"},
+    # {url = "$BASE_URL/about",  name = "about"},
+    {url = "$BASE_URL/friends",  name = "friends"},
+    {url = "$BASE_URL/assertions",  name = "assertions"},
+    {url = "$BASE_URL/atom.xml", name = "rss"},
+]
 
-
-[extra.willow]
-# The number of articles to show on the home page
-# show_article_num = 2
-
-# The order of the navigation bar, home is the first by default
-nav = ["articles", "assertions", "friends"]
-# nav = ["articles", "memos", "photography", "tags", "about"]
-
-
-# Social accounts
-# currently supported: twitter, douban, github
-# [extra.willow.social]
-# twitter = "chaojie_cn"
-# douban = "218724191"
-# github = "ischaojie"
-
-[extra.willow.photography]
-# Put the photos you want to show on the photography page here
-photos = []
-
-
-# Comment with giscus, see https://giscus.app/ for more details
-# [extra.willow.comment.giscus]
-# repo = "ischaojie/blog"
-# repo_id = "MDEwOlJlcG9zaXRvcnkyODk4MDA1NTY="
-# category = "Announcements"
-# category_id = "DIC_kwDOEUYBbM4CPWbs"
-# mapping = "title"
-
-[extra.willow.assertions]
-show_num = 10
-# api = "https://momo.chaojie.fun/api/memo/all"
+[languages.zh-tw.translations]
+title = "有希書簡"
+home = "主頁"
+archives = "歸檔"
+about = "關於"
+friends = "朋友"
+assertions = "斷言"
+rss = "訂閱"
+more = "查看全文"
+olderArticle = "舊文"
+newer = "上一篇"
+older = "下一篇"
+loading = "加載中..."

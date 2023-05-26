@@ -1,7 +1,11 @@
----
-title: "Friends 😋"
-date: "2023-04-01"
----
++++
+title = "朋友們 😋"
+
+[extra]
+year = 2023
+month = 4
+day = 1
++++
 
 - [萌狼](https://blog.horo.moe/)
 - [太一](https://starlite.me/about/)
