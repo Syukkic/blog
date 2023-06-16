@@ -7,7 +7,7 @@ month = 4
 day = 1
 +++
 
-- [萌狼](https://blog.horo.moe/)
+- [萌狼🐺](https://blog.horo.moe/)
 - [太一](https://starlite.me/about/)
 - [なままめ](https://robinzed.wordpress.com/)
 - [早川季子](https://137.ppfarm.boats/)
