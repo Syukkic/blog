@@ -21,8 +21,10 @@ friends_link = [
     "太一: https://starlite.me/about/",
     "傑克工作了: https://jack-works.github.io/",
     "早川季子: https://137.ppfarm.boats/",
-    "奈卜拉: https://astrologer.cc"
+    "奈卜拉: https://astrologer.cc",
 ]
+
+
 if __name__ == "__main__":
     n = len(friends_link)
     gen_md_list(randomize(friends_link, n))
