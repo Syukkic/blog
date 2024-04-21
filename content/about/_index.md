@@ -18,5 +18,3 @@ day = 25
 曾經自己有一個 Telegram [頻道](https://t.me/yukinodb)，但被杜叔叔封了帳號導致失去了擁有權，你好奇的話可去回看和獵奇。
 
 成爲「完備之人」是我的信念和方向——即做到自主性、互惠性、知無知、捍衛自由。
-
-如果你願意跟我聊聊天，可以通過這個郵箱（Syukkic [at] Gmail [dot] com）聯繫上我，歡迎你的來信。（另外，這是我的[公鑰](https://tfei.moe/yuki/pgp/pub/key.txt)）
