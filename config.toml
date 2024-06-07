@@ -37,6 +37,7 @@ seje_menu_links = [
     { url = "$BASE_URL/about", name = "about" },
     { url = "$BASE_URL/friends", name = "friends" },
     { url = "$BASE_URL/assertions", name = "assertions" },
+    { url = "$BASE_URL/misc", name = "misc" },
     { url = "$BASE_URL/atom.xml", name = "rss" },
 ]
 
@@ -52,6 +53,7 @@ archives = "歸檔"
 about = "關於"
 friends = "朋友"
 assertions = "斷言"
+misc = "雜記"
 rss = "訂閱"
 more = "查看全文"
 olderArticle = "舊文"
